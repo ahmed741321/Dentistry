@@ -70,5 +70,25 @@ namespace Dentistry
 
             }
         }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(pictureBox6.Visible==true)
+            {
+                pictureBox5.Visible = true;
+                pictureBox6.Visible = false;
+
+            }
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (pictureBox5.Visible == true)
+            {
+                pictureBox6.Visible = true;
+                pictureBox5.Visible = false;
+
+            }
+        }
     }
 }
