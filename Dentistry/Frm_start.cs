@@ -49,9 +49,12 @@ namespace Dentistry
                 label1.Text = "The program is ready";
                 timer1.Stop();
                 Thread.Sleep(900);
-                
-                Frm_main login = new Frm_main();
+
+
+
+                Frm_login login = new Frm_login();
                 login.Show();
+
                 this.Hide();
 
             }

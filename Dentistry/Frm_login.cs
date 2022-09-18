@@ -75,8 +75,11 @@ namespace Dentistry
         {
             if(pictureBox6.Visible==true)
             {
-                pictureBox5.Visible = true;
                 pictureBox6.Visible = false;
+                pictureBox5.Visible = true;
+
+                guna2Transition1.HideSync(pictureBox5);
+                guna2Transition1.ShowSync(pictureBox5);
 
             }
         }
@@ -88,7 +91,34 @@ namespace Dentistry
                 pictureBox6.Visible = true;
                 pictureBox5.Visible = false;
 
+                guna2Transition1.HideSync(pictureBox6);
+                guna2Transition1.ShowSync(pictureBox6);
+
             }
+        }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            Frm_main form = new Frm_main();
+            form.Show();
+
+
+        }
+
+        private void Frm_login_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

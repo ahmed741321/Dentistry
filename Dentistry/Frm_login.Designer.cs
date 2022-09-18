@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_login));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -45,6 +46,7 @@
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -56,6 +58,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.pictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(12, 13);
             this.pictureBox1.Name = "pictureBox1";
@@ -66,6 +69,7 @@
             // 
             // pictureBox2
             // 
+            this.guna2Transition1.SetDecoration(this.pictureBox2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(360, 26);
             this.pictureBox2.Name = "pictureBox2";
@@ -80,6 +84,7 @@
             this.bunifuMaterialTextbox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.bunifuMaterialTextbox1.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2Transition1.SetDecoration(this.bunifuMaterialTextbox1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
@@ -104,6 +109,7 @@
             this.bunifuMaterialTextbox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.bunifuMaterialTextbox2.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2Transition1.SetDecoration(this.bunifuMaterialTextbox2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty;
@@ -128,6 +134,7 @@
             this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.guna2ImageButton1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
@@ -142,6 +149,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.pictureBox3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(362, 131);
             this.pictureBox3.Name = "pictureBox3";
@@ -152,6 +160,7 @@
             // 
             // pictureBox4
             // 
+            this.guna2Transition1.SetDecoration(this.pictureBox4, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(360, 196);
             this.pictureBox4.Name = "pictureBox4";
@@ -168,6 +177,7 @@
             this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
+            this.guna2Transition1.SetDecoration(this.guna2GradientButton1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(176)))), ((int)(((byte)(194)))));
             this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(150)))), ((int)(((byte)(194)))));
             this.guna2GradientButton1.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -181,6 +191,7 @@
             this.guna2GradientButton1.Size = new System.Drawing.Size(204, 51);
             this.guna2GradientButton1.TabIndex = 11;
             this.guna2GradientButton1.Text = "Get Start";
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // guna2GradientButton2
             // 
@@ -190,6 +201,7 @@
             this.guna2GradientButton2.CheckedState.Parent = this.guna2GradientButton2;
             this.guna2GradientButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2GradientButton2.CustomImages.Parent = this.guna2GradientButton2;
+            this.guna2Transition1.SetDecoration(this.guna2GradientButton2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2GradientButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(176)))), ((int)(((byte)(194)))));
             this.guna2GradientButton2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(176)))), ((int)(((byte)(194)))));
             this.guna2GradientButton2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -213,6 +225,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.radioButton1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.radioButton1.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.radioButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.radioButton1.Location = new System.Drawing.Point(360, 255);
@@ -227,6 +240,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Checked = true;
+            this.guna2Transition1.SetDecoration(this.radioButton2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.radioButton2.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.radioButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.radioButton2.Location = new System.Drawing.Point(454, 255);
@@ -246,6 +260,7 @@
             this.guna2GradientButton3.CheckedState.Parent = this.guna2GradientButton3;
             this.guna2GradientButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2GradientButton3.CustomImages.Parent = this.guna2GradientButton3;
+            this.guna2Transition1.SetDecoration(this.guna2GradientButton3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2GradientButton3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(176)))), ((int)(((byte)(194)))));
             this.guna2GradientButton3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(150)))), ((int)(((byte)(194)))));
             this.guna2GradientButton3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -262,6 +277,7 @@
             // 
             // pictureBox5
             // 
+            this.guna2Transition1.SetDecoration(this.pictureBox5, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(360, 298);
             this.pictureBox5.Name = "pictureBox5";
@@ -270,9 +286,11 @@
             this.pictureBox5.TabIndex = 16;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Visible = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox6
             // 
+            this.guna2Transition1.SetDecoration(this.pictureBox6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(454, 298);
             this.pictureBox6.Name = "pictureBox6";
@@ -280,6 +298,28 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 17;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
+            // guna2Transition1
+            // 
+            this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.Transparent;
+            this.guna2Transition1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
+            this.guna2Transition1.DefaultAnimation = animation1;
             // 
             // Frm_login
             // 
@@ -300,11 +340,13 @@
             this.Controls.Add(this.bunifuMaterialTextbox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frm_login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dentistry";
+            this.Load += new System.EventHandler(this.Frm_login_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Frm_login_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -334,5 +376,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
     }
 }

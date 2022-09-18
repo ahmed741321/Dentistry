@@ -17,68 +17,58 @@ namespace Dentistry
         public Frm_main()
         {
             InitializeComponent();
+            p_homecs page = new p_homecs();
+            load_page(page);
         }
+
+        private void load_page(UserControl page)
+        {
+            try
+            {
+
+                panel1.Controls.Clear();
+                page.Dock = DockStyle.Fill;
+                panel1.Controls.Add(page);
+            }
+
+            catch
+            {
+
+            }
+        }
+
+
+        //تحريك الشاشة
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+
+        private void gunaGradient2Panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+
+
 
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if(gunaElipsePanel2.Width<150)
-            {
-                gunaElipsePanel2.Width += 3;
-                gunaElipsePanel1.Width -= 3;
-                gunaElipsePanel1.Left += 3;
-            }
-            else
-            {
-                timer1.Stop();
-            }
+            label2.Text = DateTime.Now.ToString("dddd dd:MM:yyyy \n hh:mm ");
         }
 
-
+        private void gunaImageButton2_Click(object sender, EventArgs e)
+        {
+            guna2Transition1.HideSync(panel1);
+            p_homecs page = new p_homecs();
+            load_page(page);
+            guna2Transition1.ShowSync(panel1);
+        }
 
         private void timer2_Tick(object sender, EventArgs e)
-        {
-            if (gunaElipsePanel2.Width > 55)
-            {
-                gunaElipsePanel2.Width -= 3;
-                gunaElipsePanel1.Width += 3;
-                gunaElipsePanel1.Left -= 3;
-
-
-            }
-            else
-            {
-                timer2.Stop();
-            }
-        }
-        int say = 0;
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            if (say == 0)
-            {
-                timer2.Stop();
-                   say++;
-                timer1.Start();
-
-            }
-            else
-            {
-                timer1.Stop();
-                say--;
-                timer2.Start();
-
-            }
-
-        }
-
-        private void guna2GradientButton2_Click(object sender, EventArgs e)
-        {
-            timer3.Start();
-        }
-
-
-
-        private void timer3_Tick_1(object sender, EventArgs e)
         {
             if (this.Opacity > 0)
             {
@@ -92,44 +82,25 @@ namespace Dentistry
             }
         }
 
-        private void timer4_Tick(object sender, EventArgs e)
+        private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
-            label2.Text = DateTime.Now.ToString("dddd dd:MM:yyyy \n hh:mm ");
+            timer2.Start();
         }
 
-        private void load_page(UserControl page)
+        private void gunaImageButton3_Click(object sender, EventArgs e)
         {
-            try
-            {
-
-                gunaElipsePanel1.Controls.Clear();
-                page.Dock = DockStyle.Fill;
-                gunaElipsePanel1.Controls.Add(page);
-            }
-
-
-            catch
-            {
-
-
-
-            }
-        }
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            p_homecs page =  new p_homecs();
+            guna2Transition1.HideSync(panel1);
+            p_add_user page = new p_add_user();
             load_page(page);
+            guna2Transition1.ShowSync(panel1);
         }
 
-        //تحريك الشاشة
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-        private void Frm_main_MouseDown(object sender, MouseEventArgs e)
+        private void gunaImageButton4_Click(object sender, EventArgs e)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            guna2Transition1.HideSync(panel1);
+            p_user_maneger page = new p_user_maneger();
+            load_page(page);
+            guna2Transition1.ShowSync(panel1);
         }
     }
 }
